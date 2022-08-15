@@ -9,19 +9,17 @@ public class ThreeConsecOdds {
     }
     public static boolean isThere3ConsOdds(int[] arr){
         int c = 0;
-        for(int i=0;i<arr.length;i++){
-            if(c == 3){
+        for (int j : arr) {
+            if (c == 3) {
                 return true;
             }
-            if(arr[i] % 2 != 0){
+            if (j % 2 != 0) {
                 c++;
-            }
-            else{
+            } else {
                 c = 0;
             }
             System.out.print(c + " ");
         }
-        if(c == 3) return true;
-        return false;
+        return c == 3;
     }
 }

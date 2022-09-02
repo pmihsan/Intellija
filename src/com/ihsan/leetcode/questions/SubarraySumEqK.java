@@ -1,4 +1,4 @@
-package leetcode;
+package com.ihsan.leetcode.questions;
 
 public class SubarraySumEqK {
     public static void main(String[] args) {

@@ -43,10 +43,9 @@ public class MyObj {
 
     public void delete(){
         int j;
-        for(j=i-1;j>0;j--){
-            arr[j-1] = arr[j];
+        for(j=0;j<i-1;j++){
+            arr[j] = arr[j+1];
         }
-        arr[i-1] = 0;
         i--;
     }
 

@@ -10,8 +10,8 @@ public class EqDigitCountAndValue {
 
     static boolean CheckNum(String num) {
         int[] arr = new int[num.length()];
-        getSeperateDigits(arr,num);
-//        System.out.println(Arrays.toString(arr));
+        getSeparateDigits(arr,num);
+        System.out.println(Arrays.toString(arr));
         int i = 0;
         while(i < num.length()){
             int c = getCount(arr,i);
@@ -33,7 +33,7 @@ public class EqDigitCountAndValue {
         return count;
     }
 
-    static void getSeperateDigits(int[] arr,String num) {
+    static void getSeparateDigits(int[] arr, String num) {
         for(int i=0;i<num.length();i++){
             arr[i] = num.charAt(i) - '0';
         }

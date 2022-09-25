@@ -20,6 +20,7 @@ public static void main(String[] args) {
     }
 
     public static List<String> letterCombinations(String digits) {
+        if(digits.length() == 0) return new ArrayList<String>();
         return getCombinations("",digits);
     }
 

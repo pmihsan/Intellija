@@ -11,13 +11,9 @@ public class PetyaStrings {
         else {
             s = s.toLowerCase();
             t = t.toLowerCase();
-            int a = 0, b = 0;
-            for(int i=0;i<s.length();i++){
-                if(s.charAt(i) < t.charAt(i)) a++;
-                else if(s.charAt(i) > t.charAt(i)) b++;
-            }
-            if(a > b) System.out.println(1);
-            else System.out.println(-1);
+            if(s.compareTo(t) == 0) System.out.println(0);
+            else if (s.compareTo(t) < 0 ) System.out.println(-1);
+            else System.out.println(1);
         }
     }
 }
